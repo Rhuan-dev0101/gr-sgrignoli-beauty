@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GR Sgrignoli Beauty Studio — Realçando sua beleza com cuidado, técnica e excelência." />
+  <meta name="theme-color" content="#050505" />
+  <title>GR Sgrignoli Beauty Studio</title>
+
+  <!-- Preconnect fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════
+       CURSOR PERSONALIZADO
+  ═══════════════════════════════════════════════════ -->
+  <div class="cursor-dot"  aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════════════════
+       LOADING SCREEN
+  ═══════════════════════════════════════════════════ -->
+  <div id="loading-screen" role="status" aria-label="Carregando...">
+    <div class="loading-logo">GR Sgrignoli</div>
+    <div class="loading-bar-wrap">
+      <div class="loading-bar"></div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Navegação principal">
+    <a href="#" class="nav-logo" aria-label="GR Sgrignoli Beauty Studio">
+      GR Sgrignoli
+      <span>Beauty Studio</span>
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="nav-links" role="list">
+      <li><a href="#profissionais">Profissionais</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#data">Agenda</a></li>
+      <li><a href="#formulario" class="nav-cta">Agendar</a></li>
+    </ul>
+
+    <!-- Mobile toggle -->
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════════ -->
+  <section class="hero" aria-label="Banner principal">
+    <div class="hero-bg" aria-hidden="true"></div>
+
+    <!-- Orbs decorativos -->
+    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+
+    <!-- Linha top -->
+    <div class="hero-lines" aria-hidden="true"></div>
+
+    <!-- Conteúdo -->
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        Estúdio Premium de Estética
+      </div>
+
+      <h1 class="hero-title reveal reveal-delay-1">
+        GR Sgrignoli<br /><em>Beauty Studio</em>
+      </h1>
+
+      <div class="hero-subtitle-wrap reveal reveal-delay-2">
+        <div class="hero-line"></div>
+        <p class="hero-subtitle">Realçando sua beleza com cuidado, técnica e excelência</p>
+        <div class="hero-line right"></div>
+      </div>
+
+      <button
+        id="hero-cta"
+        class="btn-hero reveal reveal-delay-3"
+        aria-label="Agendar atendimento"
+      >
+        <span>Agendar Atendimento</span>
+        <div class="btn-hero-arrow" aria-hidden="true">↓</div>
+      </button>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       PROFISSIONAIS
+  ═══════════════════════════════════════════════════ -->
+  <section id="profissionais" aria-labelledby="pro-title">
+    <div class="section-header">
+      <div class="section-tag reveal">Nossas Especialistas</div>
+      <h2 class="section-title reveal reveal-delay-1" id="pro-title">
+        Escolha sua<br /><em>Profissional</em>
+      </h2>
+      <div class="section-divider reveal reveal-delay-2" aria-hidden="true">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line right"></div>
+      </div>
+      <p class="section-subtitle reveal reveal-delay-3">
+        Selecione a especialista ideal para o tratamento que você deseja.
+      </p>
+    </div>
+
+    <div id="pro-grid" class="professionals-grid" role="list" aria-label="Profissionais disponíveis">
+      <!-- Renderizado via JS -->
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       SERVIÇOS
+  ═══════════════════════════════════════════════════ -->
+  <section id="servicos" aria-labelledby="serv-title">
+    <div class="section-header">
+      <div class="section-tag reveal">Cardápio de Tratamentos</div>
+      <h2 class="section-title reveal reveal-delay-1" id="serv-title">
+        Nossos<br /><em>Serviços</em>
+      </h2>
+      <div class="section-divider reveal reveal-delay-2" aria-hidden="true">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line right"></div>
+      </div>
+    </div>
+
+    <!-- Steps indicator -->
+    <div class="steps-bar reveal" aria-label="Progresso do agendamento">
+      <div class="step-item active" data-step="1">
+        <div class="step-num">1</div>
+        <span>Profissional</span>
+      </div>
+      <div class="step-connector" aria-hidden="true"></div>
+      <div class="step-item" data-step="2">
+        <div class="step-num">2</div>
+        <span>Serviço</span>
+      </div>
+      <div class="step-connector" aria-hidden="true"></div>
+      <div class="step-item" data-step="3">
+        <div class="step-num">3</div>
+        <span>Data</span>
+      </div>
+      <div class="step-connector" aria-hidden="true"></div>
+      <div class="step-item" data-step="4">
+        <div class="step-num">4</div>
+        <span>Contato</span>
+      </div>
+    </div>
+
+    <div class="services-wrapper">
+      <div id="services-wrapper-inner">
+        <!-- Renderizado via JS após escolha da profissional -->
+        <div class="services-empty reveal">
+          <span class="services-empty-icon" aria-hidden="true">✦</span>
+          Selecione uma profissional acima para visualizar os serviços disponíveis.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       DATA / CALENDÁRIO
+  ═══════════════════════════════════════════════════ -->
+  <section id="data" aria-labelledby="cal-title">
+    <div class="section-header">
+      <div class="section-tag reveal">Disponibilidade</div>
+      <h2 class="section-title reveal reveal-delay-1" id="cal-title">
+        Escolha a<br /><em>Data Desejada</em>
+      </h2>
+      <div class="section-divider reveal reveal-delay-2" aria-hidden="true">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line right"></div>
+      </div>
+      <p class="section-subtitle reveal reveal-delay-3">
+        Selecione a data de preferência. Confirmaremos a disponibilidade via WhatsApp.
+      </p>
+    </div>
+
+    <div class="calendar-wrapper reveal" role="region" aria-label="Calendário de agendamento">
+
+      <!-- Header do calendário -->
+      <div class="calendar-header">
+        <div class="cal-nav-group">
+          <button class="cal-nav-btn" onclick="prevYear()" aria-label="Ano anterior" title="Ano anterior">«</button>
+          <button class="cal-nav-btn" onclick="prevMonth()" aria-label="Mês anterior" title="Mês anterior">‹</button>
+        </div>
+
+        <div class="cal-month-year" id="cal-month-year" aria-live="polite">
+          <!-- Renderizado via JS -->
+        </div>
+
+        <div class="cal-nav-group">
+          <button class="cal-nav-btn" onclick="nextMonth()" aria-label="Próximo mês" title="Próximo mês">›</button>
+          <button class="cal-nav-btn" onclick="nextYear()" aria-label="Próximo ano" title="Próximo ano">»</button>
+        </div>
+      </div>
+
+      <!-- Body do calendário -->
+      <div class="calendar-body">
+        <!-- Dias da semana -->
+        <div class="cal-weekdays" aria-hidden="true">
+          <div class="cal-weekday">Dom</div>
+          <div class="cal-weekday">Seg</div>
+          <div class="cal-weekday">Ter</div>
+          <div class="cal-weekday">Qua</div>
+          <div class="cal-weekday">Qui</div>
+          <div class="cal-weekday">Sex</div>
+          <div class="cal-weekday">Sáb</div>
+        </div>
+
+        <!-- Grid dos dias -->
+        <div id="cal-days" class="cal-days" role="grid" aria-label="Dias do mês">
+          <!-- Renderizado via JS -->
+        </div>
+
+        <!-- Data selecionada -->
+        <div id="cal-selected" class="cal-selected-display" aria-live="polite">
+          Selecione uma data de preferência
+        </div>
+      </div>
+
+    </div><!-- /calendar-wrapper -->
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       FORMULÁRIO & WHATSAPP
+  ═══════════════════════════════════════════════════ -->
+  <section id="formulario" aria-labelledby="form-title">
+    <div class="section-header">
+      <div class="section-tag reveal">Finalizar Solicitação</div>
+      <h2 class="section-title reveal reveal-delay-1" id="form-title">
+        Seus<br /><em>Dados de Contato</em>
+      </h2>
+      <div class="section-divider reveal reveal-delay-2" aria-hidden="true">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line right"></div>
+      </div>
+      <p class="section-subtitle reveal reveal-delay-3">
+        Preencha abaixo e envie sua solicitação diretamente pelo WhatsApp.
+      </p>
+    </div>
+
+    <div class="form-wrapper reveal">
+
+      <!-- Resumo da seleção -->
+      <div id="form-summary" class="form-summary" aria-live="polite">
+        <div class="form-summary-title">Resumo da Solicitação</div>
+        <div class="form-summary-items">
+          <!-- Renderizado via JS -->
+        </div>
+      </div>
+
+      <!-- Campos -->
+      <div class="form-group">
+        <label class="form-label" for="input-nome">Nome Completo</label>
+        <input
+          type="text"
+          id="input-nome"
+          class="form-input"
+          placeholder="Seu nome completo"
+          autocomplete="name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="input-telefone">Telefone / WhatsApp</label>
+        <input
+          type="tel"
+          id="input-telefone"
+          class="form-input"
+          placeholder="(11) 99999-9999"
+          autocomplete="tel"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="input-obs">Observações</label>
+        <textarea
+          id="input-obs"
+          class="form-input"
+          placeholder="Horarios, Manutenção, Informações adicionais, preferências ou dúvidas..."
+          rows="4"
+        ></textarea>
+      </div>
+
+      <!-- Botão WhatsApp -->
+      <button
+        class="btn-whatsapp"
+        onclick="sendWhatsApp()"
+        aria-label="Enviar solicitação pelo WhatsApp"
+      >
+        <div class="whatsapp-icon" aria-hidden="true">
+          <!-- SVG WhatsApp inline simples -->
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+        </div>
+        <span>Enviar pelo WhatsApp</span>
+      </button>
+
+      <p class="form-note">
+        Sua solicitação será enviada diretamente para a profissional escolhida.<br />
+        A confirmação do agendamento ocorre via WhatsApp.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="footer-logo">GR Sgrignoli</div>
+    <div class="footer-tagline">Beauty Studio</div>
+    <div class="footer-divider" aria-hidden="true"></div>
+    <p class="footer-copy">
+      &copy; 2026 GR Sgrignoli Beauty Studio. Todos os direitos reservados.
+    </p>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════
+       FAB WHATSAPP FLUTUANTE
+  ═══════════════════════════════════════════════════ -->
+  <button
+    class="fab-whatsapp"
+    aria-label="Ir para agendamento pelo WhatsApp"
+    title="Agendar pelo WhatsApp"
+  >
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--black)" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
